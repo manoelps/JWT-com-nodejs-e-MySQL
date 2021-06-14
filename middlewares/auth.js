@@ -4,7 +4,7 @@ require('dotenv').config(); //Permite usar variaveis ambiente para aumentar segu
 
 //FANÇÃO para verifica se o token é valido [Midlleware]
 async function validarToken(req, res, next) {
-    const authHeader = req.headers.authorization;
+    const authHeader = req.headers['authorization'];
     const [, token] = authHeader.split(' '); //faço a divisao do header pelo espaço entre eles
 
     // return res.json({

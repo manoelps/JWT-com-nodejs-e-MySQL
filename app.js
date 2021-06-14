@@ -3,7 +3,7 @@ const app = express();
 
 const cors = require('cors'); //controla os acessos á API
 
-const administrativo = require("./routes/usuario"); //importa aquivo de rotas administrativas
+const administrativo = require("./routes/usuario-rote"); //importa aquivo de rotas administrativas
 const login = require("./routes/login"); //importa o arquivo de rota de login
 
 app.use(express.json()); //configura o express para receber dados em json
