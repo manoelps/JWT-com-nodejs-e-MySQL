@@ -3,7 +3,6 @@ const app = express();
 
 const cors = require('cors'); //controla os acessos á API
 
-const Usuario = require('./models/Usuario'); //importa a model Usuario para que seja possivel trabahar com a tabela usuarios
 const administrativo = require("./routes/usuario"); //importa aquivo de rotas administrativas
 const login = require("./routes/login"); //importa o arquivo de rota de login
 
